@@ -39,5 +39,26 @@ namespace getInShape
 
             return false;
         }
+
+        public bool CheckCoupon(string enteredCode, string correctCode, string currentDate, string expirationDate)
+        {
+            //
+            if (enteredCode == correctCode)
+            {
+                DateTime currentD = DateTime.ParseExact(currentDate, "MMMM d, yyyy", CultureInfo.InvariantCulture);
+                DateTime expirD = DateTime.ParseExact(expirationDate, "MMMM d, yyyy", CultureInfo.InvariantCulture);
+
+                Console.WriteLine(currentD);
+                Console.WriteLine(expirD);
+
+                var hours = (currentD - expirD).TotalHours;
+
+                if (hours <= 24)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }

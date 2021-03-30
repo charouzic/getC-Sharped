@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 
 namespace getInShape
 {
@@ -19,6 +20,7 @@ namespace getInShape
 
             CountDig cd = new CountDig();
             Console.WriteLine(cd.NbDig(5750, 0));
+
         }
     }
 }
