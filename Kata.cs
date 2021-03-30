@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Globalization;
+
 namespace getInShape
 {
     public class Kata
@@ -59,6 +61,28 @@ namespace getInShape
                 }
             }
             return false;
+        }
+
+        public int Gimme(double[] inputArray)
+        {
+            // Implement this function
+
+            // 0. sorting the array
+
+            double[] sortedArr = new double[] { inputArray[0], inputArray[1], inputArray[2] };
+            Array.Sort(sortedArr);
+
+            int index = 10;
+
+            for (int i = 0; i < 3; i++)
+            {
+                if (inputArray[i] == sortedArr[1])
+                {
+                    index = i;
+                }
+            }
+
+            return index;
         }
     }
 }
