@@ -35,6 +35,7 @@
     <Compile Include="Kata.cs" />
     <Compile Include="LineNumbering.cs" />
     <Compile Include="CountDig.cs" />
+    <Compile Include="Tortoise.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

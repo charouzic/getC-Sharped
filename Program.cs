@@ -9,10 +9,8 @@ namespace getInShape
         public static void Main(string[] args)
         {
             Kata k = new Kata();
-            
 
-            k.Gimme(new double[] { 2, 3, 1 });
-
+            Tortoise t = new Tortoise();
         }
     }
 }
